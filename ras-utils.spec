@@ -5,7 +5,7 @@
 Summary:	RAS Utilities
 Name:		ras-utils
 Version:	7.0
-Release:	1%{?dist}
+Release:	2%{?dist}
 Group:		Development/Tools
 License:	GPLv2
 Source0:	mce-inject-%{mce_inject_last_git_commit}.tar.bz2
@@ -60,6 +60,9 @@ rm -rf $RPM_BUILD_ROOT
 /opt/mce-test
 
 %changelog
+* Fri Dec 27 2013 Daniel Mach <dmach@redhat.com> - 7.0-2
+- Mass rebuild 2013-12-27
+
 * Mon Aug 12 2013 Prarit Bhargava <prarit@redhat.com>
 - Initial import from git://git.kernel.org/pub/scm/utils/cpu/mce/mce-test.git
 - updated mce-inject to commit 4cbe4632
